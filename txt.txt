@@ -1,0 +1,31 @@
+ 
+ 
+ for production :
+ "scripts": {
+    "build": "babel index.js --out-dir prd",
+    "start": "npm run build && nodemon prd/index.js",
+    "serve": "node prd/index.js"
+  },
+
+
+  for development
+   
+ "scripts": {
+    "start": "babel index.js -W --out-dir prd",
+    "dev-serve": "nodemon prd/index.js",
+    "serve": "node prd/index.js"
+  },
+
+
+to create complete express file and with complete generator 
+npx express-generator --view=ejs chapter3          
+
+
+ when we  import express every we use this
+import express from 'express'
+const app = express()
+const port =process.env.PORT || '3000'
+
+app.listen(port,()=>{
+    console.log(`server is listening at http://localhost:${port}`)
+})
