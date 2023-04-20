@@ -1,5 +1,5 @@
 const homecontroller = (req, res) => {
-  res.render("index", { name: "sonam" });
+  res.render("index");
 };
 
 export { homecontroller };
