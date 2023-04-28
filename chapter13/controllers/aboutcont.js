@@ -3,4 +3,3 @@ const aboutcontroller = (req, res) => {
 };
 
 export { aboutcontroller };
-("");
